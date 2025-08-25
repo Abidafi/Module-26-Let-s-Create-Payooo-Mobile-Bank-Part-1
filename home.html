@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Daisy UI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
     <!-- tailwind CDN  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font awesome CDN  -->
@@ -32,11 +32,11 @@
         </div>
 
         <div class="min-h-[200px] grid grid-cols-3 gap-4 mt-5 p-3">
-            <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
+            <div id="add-button" class="border-2 border-gray-300 text-center p-3 rounded-xl">
                 <img src="./assets/wallet1.png" class="mx-auto" alt="">
                 <h2>Add Money</h2>
             </div>
-            <div class="border-2 border-gray-300 text-center p-3 rounded-xl">
+            <div id="cash-out-button" class="border-2 border-gray-300 text-center p-3 rounded-xl">
                 <img src="./assets/send1.png" class="mx-auto" alt="">
                 <h2>Cashout</h2>
             </div>
@@ -61,7 +61,7 @@
 
     <div class="all-form-section max-w-lg mx-auto">
         <!-- add money  -->
-         <div>
+         <div id="add-money-parent">
             <h1 class="my-5 font-bold">Add Money</h1>
             <form action="" class="bg-white rounded-2xl p-8">
                 <div class="mb-3">
@@ -90,6 +90,10 @@
                 </div>
                 <button id="add-money-btn" class="btn text-white bg-[#0874F2] w-full rounded-3xl">Add Money</button>
             </form>
+         </div>
+
+         <div id="cash-out-parent" style="display: none;">
+            <h1 class="my-5 font-bold">Cash Out</h1>
          </div>
     </div>
 <script src="./home.js"></script>    
