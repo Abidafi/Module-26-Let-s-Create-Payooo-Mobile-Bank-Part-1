@@ -81,7 +81,7 @@
                 <div class="mb-3">
                     <label class="font-semibold" for="">Amount to Add</label>
                     <br>
-                    <input id="add-amount" type="text" placeholder="Add Amount to Withdraw" class="input bg-[#f4f5f7] mt-3 rounded-3xl w-full" />
+                    <input id="add-amount" type="text" placeholder="Add Amount to Deposit" class="input bg-[#f4f5f7] mt-3 rounded-3xl w-full" />
                 </div>
                 <div class="mb-5">
                     <label class="font-semibold" for="">Pin Number</label>
@@ -94,6 +94,24 @@
 
          <div id="cash-out-parent" style="display: none;">
             <h1 class="my-5 font-bold">Cash Out</h1>
+            <form action="" class="bg-white rounded-2xl p-8">
+                <div class="mb-3">
+                    <label class="font-semibold" for="">Agent Number</label>
+                    <br>
+                    <input id="withdraw-account" type="text" placeholder="Enter 11 Digit Number" class="input bg-[#f4f5f7] mt-3 rounded-3xl w-full" />
+                </div>
+                <div class="mb-3">
+                    <label class="font-semibold" for="">Amount</label>
+                    <br>
+                    <input id="withdraw-amount" type="text" placeholder="Enter Amount to Withdraw" class="input bg-[#f4f5f7] mt-3 rounded-3xl w-full" />
+                </div>
+                <div class="mb-5">
+                    <label class="font-semibold" for="">Pin Number</label>
+                    <br>
+                    <input id="withdraw-pin" type="text" placeholder="Enter 4 Digit PIN Number" class="input bg-[#f4f5f7] mt-3 rounded-3xl w-full" />
+                </div>
+                <button id="withdraw-btn" class="btn text-white bg-[#0874F2] w-full rounded-3xl">Withdraw Money</button>
+            </form>
          </div>
     </div>
 <script src="./home.js"></script>    
